@@ -1,0 +1,11 @@
+{
+  "name": "node-express-solid-api",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NorthSideBoy <saidlucena519@gmail.com> (https://github.com/NorthSideBoy)",
+  "license": "ISC",
+  "description": ""
+}
