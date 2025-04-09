@@ -9,14 +9,18 @@ export default [
 
       /* approximate "ts-standard" library rules */
 
-      "@typescript-eslint/no-unsafe-type-assertion": "off", 
-      "no-console": "off", 
+      "@typescript-eslint/no-unsafe-type-assertion": "off",
+      "no-console": "off",
       "@typescript-eslint/explicit-function-return-type": "off",
       "@typescript-eslint/no-magic-numbers": "off",
-      
+      "@typescript-eslint/prefer-destructuring":"off",
+      //"@typescript-eslint/no-unsafe-assignment":"off", //any
+
       /* personal rules */
 
-      "semi": ["error", "always"] // force use of ";" statement   
+      "semi": ["error", "always"], // force use of ";" statement   
+      "indent": ["error", 2], // indent of 2 spaces
+      "@/indent": ["error", 2], // enable indent support for TypeScript (2 spaces)
     }
   },
   {
