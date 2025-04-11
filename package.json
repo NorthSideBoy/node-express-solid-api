@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "tsc": "tsc",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev src/app.ts",
     "start": "node build/app.js",
