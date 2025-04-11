@@ -1,5 +1,5 @@
 import data from '../jsons/diaries.json';
-import type { Diary, newDiaryEntry, NonSensitiveInfoDiary } from '../types.t';
+import type { Diary, NewDiaryEntry, NonSensitiveInfoDiary } from '../types';
 
 const diaries: Diary[] = data as Diary[];
 
@@ -22,21 +22,16 @@ export const findById = (id: number): NonSensitiveInfoDiary | undefined => {
   return undefined;
 };
 
-export const addDiary = (newDiaryEntry:newDiaryEntry): Diary => {
+export const addDiary = (NewDiaryEntry: NewDiaryEntry): Diary => {
   const newDiary = {
     id: Math.max(...diaries.map(d => d.id)) + 1,
-    ...newDiaryEntry
+    ...NewDiaryEntry
   };
 
   diaries.push(newDiary);
 
   return newDiary;
 };
-
-
-export function addEntry(date: string, weather: string, visibility: string, comment: string): newDiaryEntry {
-  throw new Error('Function not implemented.');
-}
 /* Demonstration of type omission */
 
 // const diariesWithoutSensitiveInfo = getEntriesWithoutSensitiveInfo(); 
